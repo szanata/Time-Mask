@@ -2,6 +2,10 @@
 
 # Changelog
 
+- **version 1.1:**
+  - Fixed: all input nodes was receiving the value of the first when the plugin was initiated
+  - Added: minified version
+
 - **version 1:**
   - values accepted on the field must match HH:mm format
   - handle paste on field

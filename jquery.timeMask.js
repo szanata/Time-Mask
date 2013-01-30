@@ -1,7 +1,7 @@
-/**
+﻿/**
  * Time Mask Plugin
  * 
- * @version 1
+ * @version 1.1
  * 
  * @licensed MIT <http://szanata.com/MIT.txt>
  * @licensed GPL <http://szanata.com/GPL.txt>
@@ -30,8 +30,10 @@
       }
     }
 
-    $(this)
-      .attr('maxlength', 5)
-      .bind(events,{ov:$(this).val()},handler);
+    this.each(function (){
+      $(this)
+        .attr('maxlength', 5)
+        .bind(events,{ov:$(this).val()},handler)
+    });
   }
 })(jQuery);
